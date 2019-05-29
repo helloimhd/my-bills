@@ -1,0 +1,133 @@
+.textCenter {
+  text-align: center;
+  width: 100%;
+}
+
+.bodyTextBold, p {
+  font-family: courier-std, monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.bodyTextMedium {
+  font-family: courier-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodyTextGreen {
+  color: #7ac943;
+}
+
+.bodyTextOrange {
+  color: #efaa20;
+}
+
+.borderBlack {
+  border: 3px solid black;
+}
+
+.bgWhite {
+  background: white;
+}
+
+.bgGrey {
+  background: grey;
+}
+
+.line {
+  border-bottom: 4px solid black;
+  width: 100%;
+}
+
+.shadow {
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+.absoluteCenter {
+  margin: auto;
+  width: 100%;
+}
+
+.invisContainer {
+  margin: auto;
+  width: 90%;
+  padding: 20px 0px;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+  padding: 20px 40px;
+  @extend .borderBlack;
+  @extend .bgWhite;
+  @extend .shadow;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px black solid;
+  height: 50px;
+  width: 100%;
+  @extend .bgWhite;
+  z-index: 20;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 3px black solid;
+  height: 50px;
+  width: 100%;
+  opacity: 1;
+  @extend .bgWhite;
+  z-index: 20;
+}
+
+.cameraButton {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 15px;
+  z-index: 25;
+}
+
+.roundedButton {
+  border-radius: 15px;
+  padding: 15px 40px;
+  @extend .button;
+}
+
+.button {
+  cursor: pointer;
+  @extend .borderBlack;
+  @extend .bgWhite;
+  @extend .shadow;
+}
+
+.spreadContainer {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+button#sortPrice {
+	margin-right: 40px;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
