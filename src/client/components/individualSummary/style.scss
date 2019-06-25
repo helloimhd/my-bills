@@ -2,23 +2,23 @@ html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
-    border: red 1px solid;
+    /*border: red 1px solid;*/
 }
 
-h1 {
+.billSum {
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 30px;
+  font-size: 20px;
   color: black;
   text-transform: uppercase;
 }
 
-h2 {
-  font-family: montserrat, sans-serif;
-  font-weight: 700;
+.userNameSum {
+	font-family: montserrat, sans-serif;
+  font-weight: 100;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
   text-transform: uppercase;
 }
@@ -27,27 +27,32 @@ a {
   text-decoration: none;
 }
 
-td {
-	text-align: center;
-	width: 500px;
+.indvSumItemName {
+	font-family: courier-std, monospace;
+	font-weight: 100;
+	font-size: 20px;
+	word-break: normal;
 }
 
-tr, td {
-	padding: 10px;
+.indvSumOwed {
+	font-family: courier-std, monospace;
+	font-weight: 800;
+	font-size: 24px;
+	word-break: normal;
 }
 
 .intern {
   font-family: courier-std, monospace;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  font-size: 24px;
+  font-size: 20px;
+  word-break: normal;
 }
 
 .cleaner {
 	font-family: montserrat, sans-serif;
   cursor: pointer;
   padding: 5px 20px;
-  margin: 25px;
   @extend .borderBlack;
   @extend .bgWhite;
   @extend .shadow;
@@ -76,9 +81,8 @@ tr, td {
   font-family: courier-std, monospace;
   font-weight: 100;
   font-style: normal;
-  font-size: 24px;
-  margin: 2px;
-  padding: 2px;
+  font-size: 20px;
+  word-break: normal;
 }
 
 .bodyTextMedium {
@@ -112,6 +116,11 @@ tr, td {
   width: 100%;
 }
 
+.textCenterSummary {
+  text-align: center;
+  width: 100%;
+}
+
 .shadow {
   -webkit-box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
   -moz-box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
@@ -128,15 +137,15 @@ tr, td {
   width: 90%;
   padding: 20px 40px;
   padding-bottom: 40px;
-  margin-top: 30px;
   @extend .borderBlack;
   @extend .bgWhite;
   @extend .shadow;
 }
 
-button {
+.indvSumButton {
   cursor: pointer;
   padding: 5px 20px;
+  margin-top: 30px;
   @extend .borderBlack;
   @extend .bgWhite;
   @extend .shadow;
@@ -166,4 +175,15 @@ ul {
 	font-weight: 200;
 	font-style: normal;
 	font-size: 20px;
+}
+
+.headerSummary {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 3px black solid;
+  height: 50px;
+  width: 100%;
+  @extend .bgWhite;
+  z-index: 20;
 }

@@ -12,10 +12,12 @@ cloudinary.config({
 });
 
 
-const tabUrl = 'https://api.tabscanner.com/pcVKfMzzwCYEkSUKcXvBWfb3ywzPg46WtUoTs6UsCduGfbYNToC0z6BmK0bvRLnB';
+const tabUrl = 'https://api.tabscanner.com/V6MhDhgyOfEGkERDDdu8HCCd0wEi1ycLl2d0PI4VPSOYNNtFRaFk4h9GMDrLAJJ2'
+
 // pcVKfMzzwCYEkSUKcXvBWfb3ywzPg46WtUoTs6UsCduGfbYNToC0z6BmK0bvRLnB
 // AcMHx0XLLafK4avM8WdBLhZixu2fRP8WeY0z4rv1RCFPjNALkAnYIuQnJtH2BOqs
-
+// / bgm2gqxMYl50oKT8UGBByMzCRAQp86Y4PaYRyR8cd2ArQQ0KnqwzQ5CWNPNuXoqa // topup 13th june';
+// herda - pls dont use this thank you V6MhDhgyOfEGkERDDdu8HCCd0wEi1ycLl2d0PI4VPSOYNNtFRaFk4h9GMDrLAJJ2
 
 module.exports = (db) => {
 
@@ -146,7 +148,7 @@ module.exports = (db) => {
                                                             if (lineItemsCounter === lineItems.length) {
                                                                 console.log(lineItemsCounter);
                                                                 //response.send("Databases are updated");
-                                                                response.redirect('/group');
+                                                                response.redirect('/test');
                                                             } else {
                                                                 console.log("not yet")
                                                             }
@@ -302,11 +304,11 @@ module.exports = (db) => {
         })
     } // end of get user receipts
 
-    let updateReceipt = ( req, res)=>{ // update receipt and items;
+    let updateReceipt = (req, res)=>{ // update receipt and items;
         console.log('helo in update receipt controller');
 
         let dataIn = req.body.obj;
-        console.log(dataIn);
+        console.log("receipts.js receipt details ", dataIn);
         let updateReceiptObj = {
                 receipt_id: dataIn.receipt_id,
                 user_id: dataIn.user_id,
